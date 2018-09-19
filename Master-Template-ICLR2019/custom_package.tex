@@ -1,0 +1,46 @@
+% AMS mathematical facilities for LATEX
+\usepackage{amsmath}
+% Customising captions in floating environments
+\usepackage[font=small]{caption}
+% Control layout of itemize, enumerate, description
+\usepackage{enumitem}
+% Mathematical tools to use with amsmath
+\usepackage{mathtools}
+% Select alternative section titles
+\usepackage{titlesec}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{graphicx}
+\usepackage{mathbbol}
+\usepackage{subcaption}
+
+% Kills all vertical spacing in items and between items and paragraphs
+\setlist{nosep}
+
+% Change spacing around titles
+\titlespacing{\chapter}{0pt}{*.1}{*.1}
+\titlespacing{\section}{0pt}{*.1}{*.1}
+\titlespacing{\subsection}{0pt}{*.1}{*.1}
+\titlespacing{\subsubsection}{0pt}{*.1}{*.1}
+\titlespacing{\paragraph}{0pt}{*.1}{*1}
+\titlespacing{\subparagraph}{0pt}{*.1}{*1}
+
+% Change spacing after tables
+\captionsetup[table]{skip=1ex}
+
+% Change spacing around captions
+\setlength{\belowcaptionskip}{-3ex}
+
+% Reinsert missing \algbackskip
+\def\BState{\State\hskip-\ALG@thistlm}
+
+% Remove the ugly borders around references and hyperlinks
+% Tricks to make all links and citations look good
+\hypersetup{%
+    pdfborder = {0 0 0},
+    colorlinks = true, %Colored links instead of ugly boxes
+    urlcolor = blue, %Color for external hyperlinks
+    linkcolor = blue, %Color of internal links
+    citecolor = red %Color of citations
+}
